@@ -9,15 +9,20 @@ variable "inbound_http_cidr_blocks" {
 
 variable "inbound_https_cidr_blocks" {
   default = ["0.0.0.0/0"]
-  type = list(string)
+  type    = list(string)
 }
 
 variable "inbound_ssl_cidr_blocks" {
   default = ["0.0.0.0/0"]
-  type = list(string)
+  type    = list(string)
 }
 
 variable "outbound_cidr_blocks" {
   default = ["0.0.0.0/0"]
-  type = list(string)
+  type    = list(string)
+}
+
+variable "private_key_path" {
+  default = ""
+  type = string
 }
